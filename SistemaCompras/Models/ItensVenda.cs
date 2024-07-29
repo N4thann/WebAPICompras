@@ -19,6 +19,12 @@ namespace SistemaCompras.Models
         [Display(Name = "Total")]
         public double Total { get; set; }
 
+        [Column("VendaId")]
+        [Display(Name = "VendaId")]
+        public int VendaId { get; set; }
+
+        [Column("ProdutoId")]
+        [Display(Name = "ProdutoId")]
         public int ProdutoId { get; set; }
     }
 }

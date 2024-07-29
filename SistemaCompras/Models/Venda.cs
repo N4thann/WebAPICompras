@@ -25,6 +25,8 @@ namespace SistemaCompras.Models
         [Display(Name = "Status")]
         public String? Status { get; set; }
 
+        [Column("ClienteId")]
+        [Display(Name = "ClienteId")]
         public int ClienteId { get; set; }
 
         public virtual ICollection<ItensVenda> ListaDeItens { get; set; }

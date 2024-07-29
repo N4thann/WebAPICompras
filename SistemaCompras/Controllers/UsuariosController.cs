@@ -47,11 +47,11 @@ namespace APICompras.Controllers
 
             if (usuario != null)
             {
-                return Ok(new { message = "Usuário autenticado com sucesso." });
+                return true;
             }
             else
             {
-                return Ok(new { message = "Usuário não autenticado." });
+                return false;
             }
         }
 
